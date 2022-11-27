@@ -22,7 +22,7 @@ const Bookmark = ({ bookmark, id, onToggleBookmark, ...rest }) => {
 };
 Bookmark.propTypes = {
     bookmark: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     onToggleBookmark: PropTypes.func.isRequired
 };
 export default Bookmark;

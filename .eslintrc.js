@@ -15,7 +15,10 @@ module.exports = {
         semi: [2, "always"], // Точка с запятой в конце строки
 
         // Ошибка при наличии пробела при обозночении функции, уберём её
-        "space-before-function-paren": ["error", "never"],
+        "space-before-function-paren": [
+            "error",
+            { anonymos: "always", named: "newer" }
+        ],
 
         // Использование двойных кавычек
         quotes: ["error", "double", { allowTemplateLiterals: true }]
