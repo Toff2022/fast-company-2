@@ -17,7 +17,10 @@ module.exports = {
         // Ошибка при наличии пробела при обозночении функции, уберём её
         "space-before-function-paren": [
             "error",
-            { anonymos: "always", named: "newer" }
+            {
+                anonymous: "always",
+                named: "never"
+            }
         ],
 
         // Использование двойных кавычек
