@@ -54,13 +54,13 @@ const User = ({
     );
 };
 User.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    qualities: PropTypes.string.isRequired,
+    qualities: PropTypes.array.isRequired,
     professionName: PropTypes.string.isRequired,
-    completedMeetings: PropTypes.string.isRequired,
+    completedMeetings: PropTypes.number.isRequired,
     rate: PropTypes.number.isRequired,
-    bookmark: PropTypes.string.isRequired,
+    bookmark: PropTypes.bool.isRequired,
     onToggleBookmark: PropTypes.func.isRequired,
     onDelete: PropTypes.func.isRequired
 };
